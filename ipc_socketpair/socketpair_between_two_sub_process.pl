@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 # Description:
-#     1. socketpair is only used to communicate between parent and child process
-#     2. waitpid($pid, 0) is not used. if it is used, parent process will be blocked
+
 use strict;
 use IO::Handle;
 use IO::Select;
