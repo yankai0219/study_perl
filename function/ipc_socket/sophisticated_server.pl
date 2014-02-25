@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 # Description:
-#     1. socketpair is only used to communicate between parent and child process
-#     2. waitpid($pid, 0) is not used. if it is used, parent process will be blocked
+#     This is a sophisticated server, which 
+#     1) implements ipc between watch_proc and listen_proc
+#     2) receive infomation from client           
 use strict;
 use IO::Handle;
 use IO::Select;
